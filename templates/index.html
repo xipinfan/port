@@ -7,7 +7,9 @@
 <body>
     <h1>主页</h1>
     {% for foo in gallery %}
-        {{ foo.description }}<br>
+        <img src="{{ foo.image.url}}" alt="">
+        {{ foo.description }}
+        <br>
     {% endfor %}
 </body>
 </html>
