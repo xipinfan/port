@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>博客</title>
+</head>
+<body>
+    {% for foo in text %}
+        <h2>{{ foo.title }}</h2>
+        <p>{{ foo.date }}</p>
+        <img src="{{ foo.image.url }}" height="40%" width="1300px" alt="">
+        <p>{{ foo.text }}</p>
+    {% endfor %}
+</body>
+</html>
